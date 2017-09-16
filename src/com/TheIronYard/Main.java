@@ -17,13 +17,15 @@ public class Main {
         checkResult(rpnExpression, expectedResult, actualResult);
 
 
+
+
         rpnExpression = "8.2,2.1,-";
-        expectedResult = 7.3;
+        expectedResult = 6.1;
         actualResult = rpc.calculate(rpnExpression);
         checkResult(rpnExpression, expectedResult, actualResult);
 
-        rpnExpression = "4.3,9.2,*";
-        expectedResult = 39.56;
+        rpnExpression = "2.5,11,*";
+        expectedResult = 27.5;
         actualResult = rpc.calculate(rpnExpression);
         checkResult(rpnExpression, expectedResult, actualResult);
 
